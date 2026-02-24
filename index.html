@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Profesjonalne strony internetowe AI tworzone szybciej i taniej. GreenAI Web wykorzystuje sztuczną inteligencję do projektowania skutecznych stron www." />
+  <meta name="keywords"
+    content="strony internetowe AI, sztuczna inteligencja, tworzenie stron www, strony AI, projektowanie stron internetowych, strony www z AI, web design, UX/UI" />
+  <link rel="canonical" href="https://greenai-web.pl/pages/blog/konwersja-AI.html" />
+  <meta property="og:title" content="Strony internetowe AI | GreenAI Web" />
+  <meta property="og:description"
+    content="Profesjonalne strony internetowe AI tworzone szybciej i taniej dzięki wykorzystaniu sztucznej inteligencji." />
+  <meta property="og:url" content="https://greenai-web.pl/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://greenai-web.pl/assets/images/og-image.webp" />
+  <title>
+    Strony internetowe AI | GreenAI Web - Nowoczesne rozwiązania webowe
+  </title>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+  <link rel="icon" href="https://greenai-web.pl/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#2D6B4A" />
+  <meta name="msapplication-TileColor" content="#2D6B4A" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="preload" href="assets/images/hero-mobile.webp" as="image" media="(max-width: 576px)" fetchpriority="high">
+  <link rel="preload" href="assets/images/hero-tablet.webp" as="image" media="(max-width: 992px)" fetchpriority="high">
+  <link rel="preload" href="assets/images/hero-desktop.webp" as="image" media="(min-width: 993px)" fetchpriority="high">
+
+  <style>
+    
+    :root {
+      --color-primary: #2D6B4A;
+      --color-accent: #40A858;
+      --color-cta: #54E346;
+      --color-white: #FFFFFF;
+      --color-light-gray: #F3F4F6;
+      --color-dark-gray: #333333;
+      --color-medium-gray: #707070;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Roboto', sans-serif;
+    }
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: var(--font-body);
+      line-height: 1.6;
+      color: var(--color-dark-gray);
+      overflow-x: hidden;
+      padding-top: 40px;
+    }
+  
+    h1,
+    h2,
+    h3 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--color-primary);
+    }
+  
+    h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+  
+    a {
+      color: var(--color-white);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+  
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+  
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+    }
+  
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-accent), var(--color-cta));
+      color: var(--color-white);
+      box-shadow: 0 4px 15px rgba(64, 168, 88, 0.3);
+    }
+  
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid var(--color-accent);
+      color: var(--color-accent);
+    }
+    
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--color-white);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+  
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+    }
+  
+    .logo {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 0;
+    }
+  
+    .logo-text {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--color-primary);
+    }
+  
+    .logo-text span {
+      color: var(--color-accent);
+    }
+  
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+  
+    .nav-links li {
+      margin-left: 2rem;
+    }
+  
+    .nav-links a {
+      font-family: var(--font-heading);
+      font-weight: 500;
+      color: var(--color-dark-gray);
+    }
+  
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--color-accent);
+    }
+  
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      padding: 0.5rem;
+    }
+  
+    
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 80px;
+      background-color: var(--color-white);
+      overflow: hidden;
+    }
+  
+    .hero::before {
+      content: "";
+      position: absolute;
+      right: -10%;
+      top: -10%;
+      width: 60%;
+      height: 90%;
+      background: linear-gradient(135deg, rgba(64, 168, 88, 0.1), rgba(84, 227, 70, 0.2));
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      z-index: -1;
+    }
+  
+    .hero .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  
+    .hero-content {
+      flex: 1;
+      max-width: 550px;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: var(--color-medium-gray);
+      margin-bottom: 2rem;
+    }
+  
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  
+    .hero-image-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    .hero-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      animation: float 6s ease-in-out infinite;
+    }
+  
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+  
+      50% {
+        transform: translateY(-15px);
+      }
+  
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+  
+      to {
+        opacity: 1;
+      }
+    }
+  
+    #hero-heading,#hero-subtitle, #logo-text {
+      opacity: 0;
+      animation: fadeIn 0.5s ease forwards;
+      animation-delay: 1s;
+    }
+
+    @media screen and (max-width: 992px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+  
+      .hero {
+        min-height: auto;
+        padding: 120px 0 80px;
+      }
+  
+      .hero .container {
+        flex-direction: column;
+      }
+  
+      .hero-content {
+        max-width: 100%;
+        text-align: center;
+      }
+  
+      .hero-image-container {
+        justify-content: center;
+        margin-top: 2rem;
+      }
+  
+      .hero-img {
+        max-width: 400px;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+  
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+  
+      .hero-img {
+        max-width: 320px;
+      }
+  
+      .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-white);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: all 0.3s ease;
+        z-index: 999;
+      }
+  
+      .nav-links.active {
+        transform: translateY(0);
+      }
+  
+      .nav-links li {
+        margin: 1rem 0;
+      }
+  
+      .mobile-menu-btn {
+        display: block;
+      }
+  
+      .hero-btns {
+        flex-direction: column;
+        gap: 1rem;
+      }
+  
+      .btn {
+        width: 100%;
+      }
+  
+      body {
+        padding-top: 50px;
+      }
+    }
+  
+    @media screen and (max-width: 576px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+
+  <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/styles.css">
+  </noscript>
+  <script>
+    // Fallback dla przeglądarek, które nie obsługują funkcji onload na linku z preload
+    (function () {
+      var loadCSS = function (href) {
+        var ss = document.createElement('link');
+        var ref = document.getElementsByTagName('head')[0];
+        ss.rel = 'stylesheet';
+        ss.href = href;
+        ref.appendChild(ss);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function () { window.setTimeout(function () { loadCSS('css/styles.css'); }, 0); });
+      else window.addEventListener('load', function () { loadCSS('css/styles.css'); });
+    })();
+  </script>
+
+  <script type="application/ld+json">
+      {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://greenai-web.pl/#organization",
+      "name": "GreenAI Web",
+      "url": "https://greenai-web.pl/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://greenai-web.pl/assets/images/logo.png",
+        "width": 180,
+        "height": 60
+      },
+      "description": "Tworzymy nowoczesne strony internetowe AI wykorzystując sztuczną inteligencję. Szybciej, taniej i skuteczniejsze rozwiązania webowe.",
+      "sameAs": [
+        "https://facebook.com/greenai-web",
+        "https://twitter.com/greenai-web",
+        "https://instagram.com/greenai-web",
+        "https://linkedin.com/company/greenai-web"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PL"
+      },
+      "email": "info@greenai-web.pl"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://greenai-web.pl/#website",
+      "url": "https://greenai-web.pl/",
+      "name": "Strony internetowe AI | GreenAI Web - Nowoczesne rozwiązania webowe",
+      "description": "Profesjonalne strony internetowe AI tworzone szybciej i taniej. GreenAI Web wykorzystuje sztuczną inteligencję do projektowania skutecznych stron www.",
+      "publisher": {
+        "@id": "https://greenai-web.pl/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://greenai-web.pl/#webpage",
+      "url": "https://greenai-web.pl/",
+      "name": "Strony internetowe AI | GreenAI Web - Nowoczesne rozwiązania webowe",
+      "isPartOf": {
+        "@id": "https://greenai-web.pl/#website"
+      },
+      "about": {
+        "@id": "https://greenai-web.pl/#organization"
+      },
+      "description": "Profesjonalne strony internetowe AI tworzone szybciej i taniej. GreenAI Web wykorzystuje sztuczną inteligencję do projektowania skutecznych stron www."
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://greenai-web.pl/#service",
+      "name": "GreenAI Web - Strony internetowe AI",
+      "description": "Tworzymy nowoczesne strony internetowe AI wykorzystując sztuczną inteligencję. Szybciej, taniej i skuteczniej.",
+      "provider": {
+        "@id": "https://greenai-web.pl/#organization"
+      },
+      "serviceType": ["Strony wizytówkowe", "Sklepy internetowe", "Aplikacje webowe"],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Polska"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "2499",
+        "priceCurrency": "PLN",
+        "description": "Pakiety stron internetowych AI już od 2499 PLN"
+      }
+    }
+  ]
+}
+    </script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-text" id="logo-text">Green<span>AI</span> Web</div>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Otwórz menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="active">Strona główna</a></li>
+        <li><a href="#about">O nas</a></li>
+        <li><a href="#services">Usługi</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#pricing">Cennik</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+
+  
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 id="hero-heading">Strony internetowe AI - przyszłość twojego biznesu w sieci</h1>
+        <p class="hero-subtitle" id="hero-subtitle">
+          Tworzymy nowoczesne, responsywne strony internetowe AI wykorzystując
+          najnowsze technologie sztucznej inteligencji. Strony internetowe AI
+          są szybsze, tańsze i skuteczniejsze niż tradycyjne rozwiązania.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Darmowa konsultacja</a>
+          <a href="#portfolio" class="btn btn-secondary">Zobacz nasze realizacje</a>
+        </div>
+      </div>
+
+    <div class="hero-image-container">
+      <picture>
+        
+        <source media="(max-width: 576px)" srcset="assets/images/hero-mobile.webp" type="image/webp" width="300"
+          height="300">
+    
+        
+        <source media="(max-width: 992px)" srcset="assets/images/hero-tablet.webp" type="image/webp" width="400"
+          height="400">
+    
+        
+        <img src="assets/images/hero-desktop.webp" alt="Profesjonalne strony internetowe AI" class="hero-img animated-hero" width="600"
+          height="600">
+      </picture>
+    </div>
+  </section>
+
+  
+  <section id="about" class="section section-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Dlaczego strony internetowe AI</h2>
+        <p>
+          GreenAI Web to innowacyjne studio projektowe specjalizujące się w
+          tworzeniu stron internetowych AI z wykorzystaniem najnowszych
+          technologii sztucznej inteligencji, które rewolucjonizują branżę web
+          designu.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Nasza misja</h3>
+          <p>
+            Dostarczamy innowacyjne rozwiązania webowe, które wyprzedzają
+            trendy i spełniają najwyższe standardy użyteczności i estetyki.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Nasza wizja</h3>
+          <p>
+            Dążymy do rewolucjonizowania branży web design poprzez
+            wykorzystanie sztucznej inteligencji, tworząc strony, które
+            naprawdę spełniają potrzeby użytkowników.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <h3>Nasze wartości</h3>
+          <p>
+            Innowacyjność, jakość, terminowość i zorientowanie na potrzeby
+            klienta to fundamenty naszej pracy. Cenimy transparentność i
+            długotrwałe relacje.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="services" class="section section-dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>Nasze usługi w zakresie stron internetowych AI</h2>
+        <p>
+          Oferujemy kompleksowe rozwiązania webowe wspierane sztuczną
+          inteligencją
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img" style="background-image: url('assets/images/wizytowka.webp')"></div>
+          <div class="service-content">
+            <h3>Strony wizytówkowe</h3>
+            <p>
+              Nowoczesne, responsywne strony dla małych firm i specjalistów.
+              Idealny start w świecie online.
+            </p>
+            <a href="#contact" class="btn btn-secondary">Dowiedz się więcej</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img" style="
+                background-image: url('assets/images/sklepy_internetowe.webp');
+              "></div>
+          <div class="service-content">
+            <h3>Sklepy internetowe</h3>
+            <p>
+              E-commerce wspierany przez AI, z intuicyjnym panelem
+              administracyjnym i zaawansowaną analityką.
+            </p>
+            <a href="#contact" class="btn btn-secondary">Dowiedz się więcej</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img" style="
+                background-image: url('assets/images/aplikacje_webowe.webp');
+              "></div>
+          <div class="service-content">
+            <h3>Aplikacje webowe</h3>
+            <p>
+              Dedykowane aplikacje internetowe dostosowane do specyficznych
+              potrzeb biznesowych.
+            </p>
+            <a href="#contact" class="btn btn-secondary">Dowiedz się więcej</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="process" class="section section-light">
+    <div class="container">
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <img src="assets/images/proces/konsultacja.webp" alt="Konsultacja" class="process-icon" />
+          </div>
+          <h3>Konsultacja</h3>
+          <p>Określamy Twoje potrzeby, cele i grupę docelową</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <img src="assets/images/proces/analiza-ai.webp" alt="Analiza AI" class="process-icon" />
+          </div>
+          <h3>Analiza AI</h3>
+          <p>Sztuczna inteligencja analizuje branżę i konkurencję</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <img src="assets/images/proces/projektowanie.webp" alt="Projektowanie" class="process-icon" />
+          </div>
+          <h3>Projektowanie</h3>
+          <p>Tworzenie makiet i projektu zgodnego z Twoją marką</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-icon">
+            <img src="assets/images/proces/implementacja.webp" alt="Implementacja" class="process-icon" />
+          </div>
+          <h3>Implementacja</h3>
+          <p>Kodowanie i integracja funkcjonalności</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">5</div>
+          <div class="step-icon">
+            <img src="assets/images/proces/wdrozenie.webp" alt="Wdrożenie" class="process-icon" />
+          </div>
+          <h3>Wdrożenie</h3>
+          <p>Publikacja strony i szkolenie z obsługi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section section-dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>Portfolio stron internetowych AI</h2>
+
+        <p>Zobacz przykłady stron, które stworzyliśmy dla naszych klientów</p>
+      </div>
+
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">Wszystkie</button>
+
+        <button class="filter-btn" data-filter="business">Biznes</button>
+
+        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+
+        <button class="filter-btn" data-filter="personal">Portfolio</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="business" style="
+              background-image: url('assets/images/kancelarnia_prawna.webp');
+            ">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-h3">Kancelaria Prawna</h3>
+
+            <p>
+              Strona dla kancelarii specjalizującej się w prawie gospodarczym
+            </p>
+
+            <!-- <a href="#" class="btn btn-primary">Podgląd</a> -->
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="ecommerce"
+          style="background-image: url('assets/images/eco_sklep.webp')">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-h3">Sklep Eco</h3>
+
+            <p>E-commerce z produktami ekologicznymi</p>
+
+            <!-- <a href="#" class="btn btn-primary">Podgląd</a> -->
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="personal"
+          style="background-image: url('assets/images/fotograf_slubny.webp')">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-h3">Fotograf ślubny</h3>
+
+            <p>
+              Portfolio dla fotografa specjalizującego się w sesjach ślubnych
+            </p>
+
+            <!-- <a href="#" class="btn btn-primary">Podgląd</a> -->
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="business"
+          style="background-image: url('assets/images/centrum_medyczne.webp')">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-h3">Centrum Medyczne</h3>
+
+            <p>Strona dla kliniki z systemem rezerwacji wizyt</p>
+
+            <!-- <a href="#" class="btn btn-primary">Podgląd</a> -->
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="ecommerce"
+          style="background-image: url('assets/images/sklep_odziezowy.webp')">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-h3">Sklep odzieżowy</h3>
+
+            <p>E-commerce z odzieżą i konfiguratorem produktów</p>
+
+            <!-- <a href="#" class="btn btn-primary">Podgląd</a> -->
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="personal"
+          style="background-image: url('assets/images/architekt_wnetrz.webp')">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-h3">Architekt wnętrz</h3>
+
+            <p>Portfolio dla architekta z galerią projektów</p>
+
+            <!-- <a href="#" class="btn btn-primary">Podgląd</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="benefits" class="section section-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Korzyści ze stron internetowych AI</h2>
+
+        <p>
+          Dlaczego warto wybrać strony tworzone z wykorzystaniem sztucznej
+          inteligencji?
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+
+          <h3>Oszczędność czasu</h3>
+
+          <p>
+            Strony projektowane z AI powstają nawet 3 razy szybciej niż
+            tradycyjnymi metodami, co przekłada się na szybsze wdrożenie
+            Twojego biznesu online.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+
+          <h3>Personalizacja</h3>
+
+          <p>
+            AI analizuje Twoją branżę i konkurencję, tworząc unikalne
+            rozwiązania dostosowane do Twoich potrzeb i wyróżniające się na
+            tle innych.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+
+          <h3>Optymalizacja UX</h3>
+
+          <p>
+            Algorytmy AI analizują zachowania użytkowników, aby stworzyć
+            intuicyjny i efektywny interfejs zwiększający konwersję.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-search"></i>
+          </div>
+
+          <h3>SEO-friendly</h3>
+
+          <p>
+            Nasze strony są zoptymalizowane pod kątem wyszukiwarek, co
+            przekłada się na lepszą widoczność i więcej odwiedzin.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+
+          <h3>Pełna responsywność</h3>
+
+          <p>
+            Każda strona jest idealnie dostosowana do wszystkich urządzeń - od
+            smartfonów po duże ekrany komputerów.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+
+          <h3>Bezpieczeństwo</h3>
+
+          <p>
+            Najnowsze protokoły bezpieczeństwa i zgodność z przepisami RODO
+            chronią Twoje dane i dane Twoich klientów.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="pricing" class="section section-dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>Cennik</h2>
+
+        <p>Przejrzyste pakiety dostosowane do potrzeb różnych biznesów</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Pakiet Basic</h3>
+
+          <div class="price">2 499 zł <span>jednorazowo</span></div>
+
+          <p>Idealny start dla małych firm.</p>
+
+          <ul class="pricing-features">
+            <li>Strona typu landing page</li>
+
+            <li>Responsywny design</li>
+
+            <li>Podstawowe SEO</li>
+
+            <li>Hosting na 1 rok gratis</li>
+
+            <li>Podstawowy formularz kontaktowy</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-secondary">Wybieram</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <h3>Pakiet Business</h3>
+
+          <div class="price">4 999 zł <span>jednorazowo</span></div>
+
+          <p>Kompleksowe rozwiązanie dla rozwijających się firm.</p>
+
+          <ul class="pricing-features">
+            <li>Strona do 5 podstron</li>
+
+            <li>Responsywny design</li>
+
+            <li>Zaawansowane SEO</li>
+
+            <li>Hosting na 2 lata gratis</li>
+
+            <li>Integracja z social media</li>
+
+            <li>Zaawansowany formularz kontaktowy</li>
+
+            <li>Szkolenie z obsługi CMS</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">Wybieram</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Pakiet Premium</h3>
+
+          <div class="price">od 8 999 zł <span>jednorazowo</span></div>
+
+          <p>Dedykowane rozwiązania dla wymagających firm.</p>
+
+          <ul class="pricing-features">
+            <li>Nieograniczona liczba podstron</li>
+
+            <li>Projekt UX/UI na zamówienie</li>
+
+            <li>Zaawansowane SEO i analityka</li>
+
+            <li>Hosting na 3 lata gratis</li>
+
+            <li>Integracja z zewnętrznymi systemami</li>
+
+            <li>Dedykowane funkcjonalności</li>
+
+            <li>Priorytetowe wsparcie 24/7</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-secondary">Wybieram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="testimonia" class="section section-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Opinie klientów</h2>
+
+        <p>Co mówią o nas nasi zadowoleni klienci?</p>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="testimonials" id="testimonials">
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>
+                "GreenAI Web zrewolucjonizowało naszą obecność w sieci.
+                Strona, którą stworzyli, nie tylko świetnie wygląda, ale także
+                przyciąga nowych klientów. Proces współpracy był bardzo
+                przejrzysty i profesjonalny."
+              </p>
+            </div>
+
+            <div class="testimonial-author">
+              <img src="assets/images/Anna.webp" alt="strony internetowe AI" class="author-img" />
+
+              <strong>Anna Kowalska</strong>
+
+              <small>Właścicielka Eco Sklep</small>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>
+                "Jestem pod wrażeniem szybkości i jakości pracy zespołu
+                GreenAI Web. W ciągu zaledwie 2 tygodni otrzymałem w pełni
+                funkcjonalną stronę, która idealnie odzwierciedla charakter
+                mojej firmy. Polecam!"
+              </p>
+            </div>
+
+            <div class="testimonial-author">
+              <img src="assets/images/Marcin.webp" alt="strony internetowe AI" class="author-img" />
+
+              <strong>Marcin Nowak</strong>
+
+              <small>CEO MarTech Solutions</small>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>
+                "Jako architekt potrzebowałam portfolio, które wyróżni się na
+                tle konkurencji. GreenAI Web nie tylko spełnili moje
+                oczekiwania, ale je przewyższyli. Strona jest nowoczesna,
+                funkcjonalna i przyciąga uwagę potencjalnych klientów."
+              </p>
+            </div>
+
+            <div class="testimonial-author">
+              <img src="assets/images/Karolina.webp" alt="strony internetowe AI" class="author-img" />
+
+              <strong>Karolina Wiśniewska</strong>
+
+              <small>Architekt wnętrz</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-arrows">
+          <div class="testimonial-arrow prev-testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+
+          <div class="testimonial-arrow next-testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="faq" class="section section-dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>Często zadawane pytania</h2>
+        <p>Odpowiedzi na najczęściej zadawane pytania</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            Ile czasu zajmuje stworzenie strony z wykorzystaniem AI?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Czas realizacji zależy od złożoności projektu. Proste strony
+              typu landing page możemy dostarczyć nawet w ciągu 7-10 dni
+              roboczych. Bardziej rozbudowane projekty, jak sklepy
+              internetowe, zajmują od 2 do 4 tygodni. Dzięki wykorzystaniu AI
+              proces jest znacznie szybszy niż przy tradycyjnych metodach.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Czy będę mógł samodzielnie edytować treści na stronie?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Istnieje możliwość wdrożenia systemu CMS do samodzielnego
+              wstawiania treści po przejściu odpowiedniego szkolenia. Firma
+              oferuje szkolenie z obsługi CMS, co zapewni Ci swobodę w
+              zarządzaniu witryną bez konieczności każdorazowego angażowania
+              deweloperów przy wprowadzaniu zmian w treści.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Czy strony tworzone przez AI są bezpieczne?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Bezpieczeństwo jest naszym priorytetem. Wszystkie strony
+              tworzone przez GreenAI Web są zabezpieczone protokołem SSL,
+              regularnymi aktualizacjami i monitoringiem. Dbamy o zgodność z
+              przepisami RODO i najlepszymi praktykami branżowymi w zakresie
+              bezpieczeństwa.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Czy oferujecie wsparcie po wdrożeniu strony?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Tak, oferujemy różne pakiety wsparcia po wdrożeniu, dopasowane
+              do potrzeb klienta. Podstawowe wsparcie techniczne jest zawarte
+              w każdym pakiecie. Dla klientów, którzy potrzebują regularnej
+              obsługi, mamy specjalne pakiety serwisowe obejmujące
+              aktualizacje, backupy i modyfikacje treści.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Czym różnią się strony internetowe AI od tradycyjnych stron?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Strony internetowe AI tworzone są z wykorzystaniem sztucznej
+              inteligencji, co przynosi szereg korzyści: znacznie krótszy czas
+              realizacji (nawet o 70%), lepszą optymalizację pod kątem
+              użytkownika dzięki analizie danych i trendów, wyższą skuteczność
+              marketingową oraz lepsze dopasowanie do specyfiki branży. Strony
+              internetowe AI są również bardziej elastyczne i łatwiejsze w
+              aktualizacji.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Jakie są koszty stron internetowych AI w porównaniu do
+            tradycyjnych?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Strony internetowe AI są zazwyczaj o 30-50% tańsze od
+              tradycyjnych rozwiązań przy zachowaniu tej samej lub wyższej
+              jakości. Wynika to z automatyzacji wielu procesów, które
+              normalnie wymagałyby godzin pracy specjalistów, a dodatkowo
+              długoterminowe koszty utrzymania są niższe dzięki łatwiejszej
+              aktualizacji i optymalizacji.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Czym różni się strona tworzona przez AI od tradycyjnej?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Strony tworzone z wykorzystaniem AI mają kilka przewag: są
+              tworzone szybciej, są lepiej zoptymalizowane pod kątem
+              doświadczeń użytkownika (UX) dzięki analizie danych, są lepiej
+              dostosowane do potrzeb konkretnej branży, a także posiadają
+              bardziej spersonalizowany design. AI pomaga w analizie
+              konkurencji i trendów, co przekłada się na lepsze wyniki
+              biznesowe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="blog" class="section section-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Blog</h2>
+        <p>Najnowsze artykuły i porady dotyczące stron internetowych i AI</p>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-img" style="background-image: url('assets/images/blog_01.webp')"></div>
+          <div class="blog-content">
+            <div class="blog-date">02.03.2025</div>
+            <h3>
+              5 powodów, dla których warto wykorzystać AI w projektowaniu
+              stron
+            </h3>
+            <p>
+              Odkryj, jak sztuczna inteligencja rewolucjonizuje proces
+              tworzenia stron internetowych i jakie korzyści przynosi
+              właścicielom biznesów.
+            </p>
+            <a href="pages/blog/ai-projektowanie-stron.html" class="btn btn-secondary">Czytaj więcej</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-img" style="background-image: url('assets/images/blog_02.webp')"></div>
+          <div class="blog-content">
+            <div class="blog-date">25.02.2025</div>
+            <h3>Trendy w projektowaniu stron na rok 2025</h3>
+            <p>
+              Jakie elementy designu będą dominować w tym roku? Sprawdź
+              najnowsze trendy w projektowaniu stron internetowych.
+            </p>
+            <a href="pages/blog/trendy-2025.html" class="btn btn-secondary">Czytaj więcej</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-img" style="background-image: url('assets/images/blog_03.webp')"></div>
+          <div class="blog-content">
+            <div class="blog-date">18.02.2025</div>
+            <h3>Jak zwiększyć konwersję na stronie dzięki AI?</h3>
+            <p>
+              Praktyczne wskazówki, jak wykorzystać sztuczną inteligencję do
+              optymalizacji strony pod kątem konwersji i zwiększenia
+              sprzedaży.
+            </p>
+            <a href="pages/blog/konwersja-AI.html" class="btn btn-secondary">Czytaj więcej</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>Kontakt</h2>
+        <p>Skontaktuj się z nami, aby omówić Twój projekt</p>
+      </div>
+      <div class="contact-container centered">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Imię i nazwisko</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Temat</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Wiadomość</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Wyślij wiadomość
+            </button>
+          </form>
+          <div class="email-contact">
+            <a href="mailto:info@greenai-web.pl" class="mail-link" aria-label="Wyślij email na adres info@greenai-web.pl">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+            </a>
+            <p class="contact-text">Możesz również napisać do nas bezpośrednio: <strong>pcwitcher.ie@gmail.com</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <div class="logo-text" style="color: white">
+              Green<span>AI</span> Web
+            </div>
+          </div>
+          <p>
+            Tworzymy nowoczesne strony internetowe wykorzystując możliwości
+            sztucznej inteligencji. Dołącz do firm, które już wybrały
+            przyszłość.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-container">
+          <h3 class="footer-heading">Szybkie linki</h3>
+          <ul class="footer-links">
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Cennik</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-container">
+          <h3 class="footer-heading">Usługi</h3>
+          <ul class="footer-links">
+            <li><a href="#portfolio">Strony wizytówkowe</a></li>
+            <li><a href="#portfolio">Sklepy internetowe</a></li>
+            <li><a href="#services">Aplikacje webowe</a></li>
+            <li><a href="#services">Pozycjonowanie</a></li>
+            <li><a href="#services">Hosting</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-container">
+          <h3 class="footer-heading">Informacje</h3>
+          <ul class="footer-links">
+            <li><a href="pages/blog/polityka_prywatnosci.html">Polityka prywatności</a></li>
+            <li><a href="pages/blog/regulamin.html">Regulamin</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 GreenAI Web. Wszystkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js" defer></script>
+  <scrip src="js/contact-form-ajax.js" async>
+    </script>
+</body>
+
+</html>

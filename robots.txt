@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/fontawesome/
+Disallow: /assets/fonts/
+Disallow: /js/
+Sitemap: https://greenai-web.pl/sitemap.xml
